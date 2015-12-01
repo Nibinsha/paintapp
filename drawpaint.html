@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+<body onload="init()">
+    <canvas id="can" width="1200" height="660" style="position:absolute;top:1%;left:1%;border:2px solid;"></canvas>
+    <div style="position:absolute;top:4%;left:1%;">Choose Color</div>
+    <div style="position:absolute;top:7%;left:2%;width:10px;height:10px;background:green;" id="green" onclick="color(this)"></div>
+    <div style="position:absolute;top:7%;left:4%;width:10px;height:10px;background:blue;" id="blue" onclick="color(this)"></div>
+    <div style="position:absolute;top:7%;left:6%;width:10px;height:10px;background:red;" id="red" onclick="color(this)"></div>
+    <div style="position:absolute;top:9%;left:2%;width:10px;height:10px;background:yellow;" id="yellow" onclick="color(this)"></div>
+    <div style="position:absolute;top:9%;left:4%;width:10px;height:10px;background:orange;" id="orange" onclick="color(this)"></div>
+    <div style="position:absolute;top:9%;left:6%;width:10px;height:10px;background:black;" id="black" onclick="color(this)"></div>
+    <div style="position:absolute;top:12%;left:2%;">Eraser</div>
+    <div style="position:absolute;top:12%;left:6%;width:15px;height:15px;background:white;border:2px solid;" id="white" onclick="color(this)"></div>
+
+   
+    <input type="button" value="clear" id="clr" size="24" onclick="erase()" style="position:absolute;top:16%;left:2%;">
+    <input type="button" value="Resize" id="clr" size="24" onclick="resizeCanvas()" style="position:absolute;top:20%;left:2%;">
+
+     <script src="drawpaint.js"></script>
+</body>
+</html>
